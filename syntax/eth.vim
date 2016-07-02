@@ -13,7 +13,7 @@ syntax case match
 setlocal iskeyword=33,36,45-47,48-57,63-64,@,_
 syntax match ethSymbol "\<\k\+\>"
 
-syntax keyword ethBuiltin fn do if while set = get . def let package import
+syntax keyword ethBuiltin fn do if while set = get . def let package import export var
 syntax keyword ethBuiltin typeof new
 syntax keyword ethBuiltin + - * / %
 syntax keyword ethBuiltin < <= > >= == != !
@@ -22,10 +22,11 @@ syntax keyword ethBuiltin "&&"
 syntax keyword ethFunc null? undefined? boolean? number? string? object? array? function?
 syntax keyword ethFunc assert apply curry curry2 curry3 curryN
 syntax keyword ethFunc add sub mul div mod
-syntax keyword ethFunc PI abs ceil floor log sin cos tan pow max min round sqrt inc dec random
-syntax keyword ethFunc len head tail last concat cons append map reduce filter
+syntax keyword ethFunc PI abs ceil floor log sin cos tan pow max min round sqrt inc dec random even? odd?
+syntax keyword ethFunc len head tail last concat cons append map reduce filter for-each
 syntax keyword ethFunc string array object type and or
-syntax keyword ethFunc print
+syntax keyword ethFunc print identity
+syntax keyword ethFunc keys values merge clone
 
 syntax match ethKeyword ":\<\k\+\>"
 
