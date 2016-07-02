@@ -49,7 +49,7 @@ syntax region ethObject matchgroup=ethDelim start="{"  matchgroup=ethDelim end="
 
 syntax match ethBracketError display ")"
 
-syntax sync match matchPlace grouphere NONE "^[^ \t]"
+syntax sync fromstart
 
 highlight default link ethBuiltin      Keyword
 highlight default link ethFunc         Identifier
