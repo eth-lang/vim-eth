@@ -14,19 +14,20 @@ setlocal iskeyword=33,36,45-47,48-57,63-64,@,_
 syntax match ethSymbol "\<\k\+\>"
 
 syntax keyword ethBuiltin fn do if while set = get . def let package import export var
-syntax keyword ethBuiltin typeof new
+syntax keyword ethBuiltin typeof new throw
 syntax keyword ethBuiltin + - * / %
 syntax keyword ethBuiltin < <= > >= == != !
 syntax keyword ethBuiltin "||"
 syntax keyword ethBuiltin "&&"
-syntax keyword ethFunc null? undefined? boolean? number? string? object? array? function?
+syntax keyword ethFunc type of-type? null? undefined? boolean? number? string? object? array? function?
 syntax keyword ethFunc assert not apply curry curry2 curry3 curryN
 syntax keyword ethFunc add sub mul div mod
 syntax keyword ethFunc PI abs ceil floor log sin cos tan pow max min round sqrt inc dec random even? odd?
-syntax keyword ethFunc len head tail last concat cons append map reduce filter for-each contains
-syntax keyword ethFunc string array object type and or
-syntax keyword ethFunc print identity
-syntax keyword ethFunc keys values merge clone assoc get-in set-in update-in
+syntax keyword ethFunc len head tail last concat cons append map reduce filter for-each contains join
+syntax keyword ethFunc string array object and or
+syntax keyword ethFunc print identity always
+syntax keyword ethFunc from-json to-json
+syntax keyword ethFunc prop prop-eq pick keys values merge clone assoc get-in set-in update-in
 
 syntax match ethKeyword ":\<\k\+\>"
 
