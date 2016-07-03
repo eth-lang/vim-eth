@@ -20,13 +20,13 @@ syntax keyword ethBuiltin < <= > >= == != !
 syntax keyword ethBuiltin "||"
 syntax keyword ethBuiltin "&&"
 syntax keyword ethFunc null? undefined? boolean? number? string? object? array? function?
-syntax keyword ethFunc assert apply curry curry2 curry3 curryN
+syntax keyword ethFunc assert not apply curry curry2 curry3 curryN
 syntax keyword ethFunc add sub mul div mod
 syntax keyword ethFunc PI abs ceil floor log sin cos tan pow max min round sqrt inc dec random even? odd?
-syntax keyword ethFunc len head tail last concat cons append map reduce filter for-each
+syntax keyword ethFunc len head tail last concat cons append map reduce filter for-each contains
 syntax keyword ethFunc string array object type and or
 syntax keyword ethFunc print identity
-syntax keyword ethFunc keys values merge clone
+syntax keyword ethFunc keys values merge clone assoc get-in set-in update-in
 
 syntax match ethKeyword ":\<\k\+\>"
 
