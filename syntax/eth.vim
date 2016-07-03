@@ -23,7 +23,8 @@ syntax keyword ethFunc type of-type? null? undefined? boolean? number? string? o
 syntax keyword ethFunc assert not apply curry curry2 curry3 curryN
 syntax keyword ethFunc add sub mul div mod
 syntax keyword ethFunc PI abs ceil floor log sin cos tan pow max min round sqrt inc dec random even? odd?
-syntax keyword ethFunc len head tail last concat cons append map reduce filter for-each contains join
+syntax keyword ethFunc len head tail last concat cons append map reduce filter for-each join
+syntax keyword ethFunc "contains"
 syntax keyword ethFunc string array object and or
 syntax keyword ethFunc print identity always
 syntax keyword ethFunc from-json to-json
@@ -67,5 +68,7 @@ highlight default link ethCommentTodo  Todo
 
 highlight default link ethDelim        Delimiter
 highlight default link ethBracketError Error
+
+highlight link ethDelim Comment
 
 let b:current_syntax = "eth"
