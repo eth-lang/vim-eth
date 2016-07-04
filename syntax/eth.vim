@@ -14,11 +14,13 @@ setlocal iskeyword=33,36,45-47,48-57,63-64,@,_
 syntax match ethSymbol "\<\k\+\>"
 
 syntax keyword ethBuiltin fn do if while set = get . def let package import export var
-syntax keyword ethBuiltin typeof new throw try
+syntax keyword ethBuiltin new throw try
 syntax keyword ethBuiltin + - * / %
-syntax keyword ethBuiltin < <= > >= == != !
+syntax keyword ethBuiltin < <= > >= == !=
 syntax keyword ethBuiltin "||"
 syntax keyword ethBuiltin "&&"
+syntax keyword ethBuiltin in instanceof
+syntax keyword ethBuiltin ! void delete typeof
 syntax keyword ethFunc type of-type? null? undefined? boolean? number? string? object? array? function?
 syntax keyword ethFunc assert not apply curry curry2 curry3 curryN
 syntax keyword ethFunc add sub mul div mod
