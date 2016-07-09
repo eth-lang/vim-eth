@@ -49,6 +49,12 @@ syntax keyword ethBuiltin void
 syntax keyword ethBuiltin delete
 syntax keyword ethBuiltin typeof
 
+" builtin macro syntax
+syntax keyword ethBuiltin quote
+syntax keyword ethBuiltin quasi-quote
+syntax keyword ethBuiltin unquote
+syntax keyword ethBuiltin unquote-splicing
+
 " builtin macros
 syntax keyword ethBuiltin import
 syntax keyword ethBuiltin package
@@ -57,9 +63,8 @@ syntax keyword ethBuiltin defmacro
 syntax keyword ethBuiltin defn
 
 " stdlib ramda
-syntax keyword ethBuiltin "contains"
-syntax keyword ethBuiltin F T __ add addIndex adjust all allPass allUniq always and any anyPass ap aperture append apply applySpec assoc assocPath binary bind both call chain clamp clone comparator complement compose composeK composeP concat cond construct constructN converge countBy curry curryN dec defaultTo difference differenceWith dissoc dissocPath divide drop dropLast dropLastWhile dropRepeats dropRepeatsWith dropWhile either empty eqBy eqProps equals evolve filter find findIndex findLast findLastIndex flatten flip forEach fromPairs groupBy groupWith gt gte has hasIn head identical identity ifElse inc indexBy indexOf init insert insertAll intersection intersectionWith intersperse into invert invertObj invoker is isArrayLike isEmpty isNil join juxt keys keysIn last lastIndexOf length lens lensIndex lensPath lensProp lift liftN lt lte map mapAccum mapAccumRight mapObjIndexed match mathMod max maxBy mean median memoize merge mergeAll mergeWith mergeWithKey min minBy modulo multiply nAry negate none not nth nthArg objOf of omit once or over pair partial partialRight partition path pathEq pathOr pathSatisfies pick pickAll pickBy pipe pipeK pipeP pluck prepend product project prop propEq propIs propOr propSatisfies props range reduce reduceBy reduceRight reduced reject remove repeat replace reverse scan sequence set slice sort sortBy split splitAt splitEvery splitWhen subtract sum symmetricDifference symmetricDifferenceWith tail take takeLast takeLastWhile takeWhile tap test times toLower toPairs toPairsIn toString toUpper transduce transpose traverse trim tryCatch type unapply unary uncurryN unfold union unionWith uniq uniqBy uniqWith unless unnest until update useWith values valuesIn view when where whereEq without wrap xprod zip zipObj zipWith
-"
+syntax keyword ethFunc "contains"
+syntax keyword ethFunc F T __ add addIndex adjust all allPass allUniq always and any anyPass ap aperture append apply applySpec assoc assocPath binary bind both call chain clamp clone comparator complement compose composeK composeP concat cond construct constructN converge countBy curry curryN dec defaultTo difference differenceWith dissoc dissocPath divide drop dropLast dropLastWhile dropRepeats dropRepeatsWith dropWhile either empty eqBy eqProps equals evolve filter find findIndex findLast findLastIndex flatten flip forEach fromPairs groupBy groupWith gt gte has hasIn head identical identity ifElse inc indexBy indexOf init insert insertAll intersection intersectionWith intersperse into invert invertObj invoker is isArrayLike isEmpty isNil join juxt keys keysIn last lastIndexOf length lens lensIndex lensPath lensProp lift liftN lt lte map mapAccum mapAccumRight mapObjIndexed match mathMod max maxBy mean median memoize merge mergeAll mergeWith mergeWithKey min minBy modulo multiply nAry negate none not nth nthArg objOf of omit once or over pair partial partialRight partition path pathEq pathOr pathSatisfies pick pickAll pickBy pipe pipeK pipeP pluck prepend product project prop propEq propIs propOr propSatisfies props range reduce reduceBy reduceRight reduced reject remove repeat replace reverse scan sequence set slice sort sortBy split splitAt splitEvery splitWhen subtract sum symmetricDifference symmetricDifferenceWith tail take takeLast takeLastWhile takeWhile tap test times toLower toPairs toPairsIn toString toUpper transduce transpose traverse trim tryCatch type unapply unary uncurryN unfold union unionWith uniq uniqBy uniqWith unless unnest until update useWith values valuesIn view when where whereEq without wrap xprod zip zipObj zipWith
 
 " stdlib eth
 syntax keyword ethFunc to-json
@@ -84,6 +89,9 @@ syntax keyword ethFunc function?
 syntax keyword ethFunc string
 syntax keyword ethFunc array
 syntax keyword ethFunc object
+syntax keyword ethFunc keyword
+syntax keyword ethFunc symbol
+syntax keyword ethFunc list
 
 syntax match ethKeyword ":\<\k\+\>"
 
