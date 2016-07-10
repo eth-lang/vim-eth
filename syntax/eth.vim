@@ -64,13 +64,16 @@ syntax keyword ethBuiltin defn
 
 " stdlib ramda
 syntax keyword ethFunc "contains"
-syntax keyword ethFunc F T __ add addIndex adjust all allPass allUniq always and any anyPass ap aperture append apply applySpec assoc assocPath binary bind both call chain clamp clone comparator complement compose composeK composeP concat cond construct constructN converge countBy curry curryN dec defaultTo difference differenceWith dissoc dissocPath divide drop dropLast dropLastWhile dropRepeats dropRepeatsWith dropWhile either empty eqBy eqProps equals evolve filter find findIndex findLast findLastIndex flatten flip forEach fromPairs groupBy groupWith gt gte has hasIn head identical identity ifElse inc indexBy indexOf init insert insertAll intersection intersectionWith intersperse into invert invertObj invoker is isArrayLike isEmpty isNil join juxt keys keysIn last lastIndexOf length lens lensIndex lensPath lensProp lift liftN lt lte map mapAccum mapAccumRight mapObjIndexed match mathMod max maxBy mean median memoize merge mergeAll mergeWith mergeWithKey min minBy modulo multiply nAry negate none not nth nthArg objOf of omit once or over pair partial partialRight partition path pathEq pathOr pathSatisfies pick pickAll pickBy pipe pipeK pipeP pluck prepend product project prop propEq propIs propOr propSatisfies props range reduce reduceBy reduceRight reduced reject remove repeat replace reverse scan sequence set slice sort sortBy split splitAt splitEvery splitWhen subtract sum symmetricDifference symmetricDifferenceWith tail take takeLast takeLastWhile takeWhile tap test times toLower toPairs toPairsIn toString toUpper transduce transpose traverse trim tryCatch type unapply unary uncurryN unfold union unionWith uniq uniqBy uniqWith unless unnest until update useWith values valuesIn view when where whereEq without wrap xprod zip zipObj zipWith
+syntax keyword eth-Func F T __ add add-index adjust all all-pass all-uniq always and any any-pass ap aperture append apply apply-spec assoc assoc-path binary bind both call chain clamp clone comparator complement compose compose-k compose-p concat cond construct construct-n converge count-by curry curry-n dec default-to difference difference-with dissoc dissoc-path divide drop drop-last drop-last-while drop-repeats drop-repeats-with drop-while either empty eq-by eq-props equals evolve filter find find-index find-last find-last-index flatten flip for-each from-pairs group-by group-with gt gte has has-in head identical identity if-else inc index-by index-of init insert insert-all intersection intersection-with intersperse into invert invert-obj invoker is array-like? empty? nil? join juxt keys keys-in last last-index-of length lens lens-index lens-path lens-prop lift lift-n lt lte map map-accum map-accum-right map-obj-indexed match math-mod max max-by mean median memoize merge merge-all merge-with merge-with-key min min-by modulo multiply n-ary negate none not nth nth-arg obj-of of omit once or over pair partial partial-right partition path path-eq path-or path-satisfies pick pick-all pick-by pipe pipe-k pipe-p pluck prepend product project prop prop-eq prop-is prop-or prop-satisfies props range reduce reduce-by reduce-right reduced reject remove repeat replace reverse scan sequence set slice sort sort-by split split-at split-every split-when subtract sum symmetric-difference symmetric-difference-with tail take take-last take-last-while take-while tap test times to-lower to-pairs to-pairs-in to-string to-upper transduce transpose traverse trim try-catch type unapply unary uncurry-n unfold union union-with uniq uniq-by uniq-with unless unnest until update use-with values values-in view when where where-eq without wrap xprod zip zip-obj zip-with
 
 " stdlib eth
+syntax keyword ethFunc assert
+syntax keyword ethFunc print
 syntax keyword ethFunc to-json
 syntax keyword ethFunc from-json
-syntax keyword ethFunc print
-syntax keyword ethFunc assert
+syntax keyword ethFunc regexp
+syntax keyword ethFunc regexp-match
+syntax keyword ethFunc regexp-find
 syntax keyword ethFunc get-in
 syntax keyword ethFunc set-in
 syntax keyword ethFunc type
@@ -100,7 +103,7 @@ syntax region ethString start=/"/ skip=/\\\\\|\\"/ end=/"/ contains=soloStringEs
 
 syntax match ethNumber "\v<[-+]?%(0|[1-9]\d*)\.?\d*>"
 
-syntax keyword ethBoolean null true false
+syntax keyword ethBoolean null undefined true false
 
 syntax match ethVarArg "\.\.\."
 
