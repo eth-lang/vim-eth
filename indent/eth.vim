@@ -5,7 +5,7 @@ function! EthIndent()
   let previousNum = prevnonblank(v:lnum - 1)
   let previous = getline(previousNum)
 
-  if previous =~ "("
+  if previous =~ "{"
     return indent(previousNum) + &tabstop
   endif
 
