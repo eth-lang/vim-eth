@@ -82,7 +82,7 @@ syntax keyword ethBoolean nil true false
 
 syntax match ethVarArg "\.\."
 
-syntax match ethComment ";.*$" contains=ethCommentTodo,@Spell
+syntax match ethComment "//.*$" contains=ethCommentTodo,@Spell
 syntax keyword ethCommentTodo contained FIXME TODO HACK FIXME: TODO: HACK:
 
 syntax cluster ethTop contains=@Spell,ethBracketError,ethComment,ethVarArg,ethBoolean,ethNumber,ethKeyword,ethString,ethStringEscape,ethBuiltin,ethFunc,ethSymbol,ethList,ethArray,ethObject
